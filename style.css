@@ -75,5 +75,38 @@ h2 {
     line-height: 19px;
 }
 
+/* Formulaire */
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    background: #F2F2F2;
+    border: 1px solid green;
+    border-radius: 15px 0px 0px 15px;
+
+}
+/* Font awesome */
+i {
+    padding-left: 15px;
+    padding-right: 5px;
+
+}
+
+input.text_rechercher {
+    border: white;
+
+
+}
+/* Bouton Rechercher */
+input.submit{
+    font-weight: 700;
+    color: white;
+    padding: 15px 16px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
 
 
