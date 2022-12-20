@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 
 body{    
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
     font-style: normal;
-    color: #000000;    
+    color: #000000;
+    padding: 25px;    
 }
 
 /* Tete de page */
 section.top-page {
-    padding: 25px;
+
 
 }
 
@@ -24,32 +27,53 @@ header.header {
 header img {
     width: 61.09px;
     height: 19px;
+    
 }
 
 /* Menu nav */
 nav.nav {
     display: flex;
     list-style: none;
+    
 }
 
-a{ 
-    padding-left: 20px;
+a { 
     color: #000000;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
+    padding: 10px ;
 
 }
-
 
 /* Ajout de l'effet de survol */
  nav.nav li:hover a{ 
     color: #0065FC;
-    border-top: 2px solid blue;
-    box-shadow: inset blue;
+    border-top: 2px solid #0065FC;
+    padding-top: 32px;
 }
 
+/* Landing page */
+section.landing-page {
     
+}
+
+section.landing-page h1 {
+    padding-top: 25px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
 
 
 
