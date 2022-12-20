@@ -1,57 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-body{
-    
+body{    
 	font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
     font-style: normal;
-    color: #000000;
-    
+    color: #000000;    
 }
-
 
 /* Tete de page */
-header{
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    
+section.top-page {
+    padding: 25px;
+
 }
 
-img.logo{
-    
-    position: absolute;
+header.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo du site */
+header img {
     width: 61.09px;
     height: 19px;
 }
 
-/* Menu de nav */
-
-.btn{
-    list-style-type: none;
+/* Menu nav */
+nav.nav {
     display: flex;
-    justify-content: flex-end;
-    
+    list-style: none;
 }
 
-a{
-    display: flex;
-    color: #0065FC;
+a{ 
+    padding-left: 20px;
+    color: #000000;
     text-decoration: none;
-    padding: 10px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
-    
+
 }
 
-nav.menu-nav ul li.btn:hover a{
-    background-color: black;
+
+/* Ajout de l'effet de survol */
+ nav.nav li:hover a{ 
+    color: #0065FC;
+    border-top: 2px solid blue;
+    box-shadow: inset blue;
 }
+
     
 
 
