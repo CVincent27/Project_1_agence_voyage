@@ -120,26 +120,40 @@ section.filtre{
     align-items: center;
     font-family: 'Raleway';
 }
-
 h3{
     font-weight: 700;
     font-size: 18px;
-    
+
 }
 
+/* Buttons filtre */
 ol{
-    font-weight: 700, bolder;
+    font-weight: 700;
     font-size: 17px;
 }
-
-button.button_filtre{
-    margin-left: 25px;
-    background-color: white;
+/* div.button_filtre{} */
+button{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 15px; 
+    padding: 15px;
+    cursor: pointer;
+    background-color: white;
 }
+button:hover{
+    background-color: #DEEBFF;
+}
+/* button.button_eco{} */
 
+
+button.button_family{
+    margin-left: 25px;
+}
+button.button_heart{
+    margin-left: 25px;
+}
+button.button_dog{
+    margin-left: 25px;
+}
 i{
     color: blue;
 }
