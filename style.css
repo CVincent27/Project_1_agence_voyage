@@ -78,20 +78,16 @@ h2 {
 /* Formulaire */
 form{
     display: flex;
-    flex-direction: row;
     align-items: center;
-
-
     background: #F2F2F2;
-    border: 1px solid green;
+    border: 1px solid yellow;
     border-radius: 15px 0px 0px 15px;
 
 }
 /* Font awesome */
-i {
+i.fa-location-dot {
     padding-left: 15px;
     padding-right: 5px;
-
 }
 
 input.text_rechercher {
@@ -108,5 +104,11 @@ input.submit{
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
 }
+
+h3 {
+    display: flex;
+    
+}
+
 
 
