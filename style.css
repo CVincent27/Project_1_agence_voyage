@@ -175,4 +175,40 @@ h4{
     margin-left: 15px;
 }
 
+/* Hebergement à marseille */
+div.hebergement_marseile{
+    display: flex;
+    background-color: #0065FC;
+    z-index: 10;
+    /* background à rajouter en gris et shadow */
+
+}
+div.card_marseille{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    border: 2px solid #0065FC;
+    border-radius: 20px;
+}
+.img_marseille1{
+    max-height: auto;
+    max-width: 90%;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+div.container_marseille1{
+
+}
+h5{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+p.info_container_marseille1{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
 
