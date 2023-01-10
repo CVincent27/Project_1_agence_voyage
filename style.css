@@ -12,13 +12,10 @@ body{
 }
 
 /* Tete de page */
-section.top-page {
 
-
-}
-
-header.header {
+header {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -30,7 +27,7 @@ header img {
 }
 
 /* Menu nav */
-nav.nav {
+ul {
     display: flex;
     list-style: none;
     
@@ -46,18 +43,14 @@ a {
 }
 
 /* Ajout de l'effet de survol */
- nav.nav li:hover a{ 
+li:hover a{ 
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 32px;
+    padding-top: 50px;
 }
 
 /* Landing page */
-section.landing-page {
-    
-}
-
-section.landing-page h1 {
+.landing-page h1 {
     padding-top: 25px;
     font-family: 'Raleway';
     font-style: normal;
@@ -82,6 +75,8 @@ form{
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     width: 250px;
+    margin-bottom: 10px;
+
 
 }
 
@@ -91,8 +86,8 @@ i.fa-location-dot {
     padding-right: 5px;
 }
 
-input.text_rechercher {
-    background: white;
+.text_rechercher {
+    background: #F2F2F2;
     border: white;
 }
 
@@ -116,14 +111,13 @@ input.submit{
 /* Filtre */
 section.filtre{
     display: flex;
-    /* flex-direction: row; UTILE ? */
     align-items: center;
     font-family: 'Raleway';
 }
 h3{
     font-weight: 700;
     font-size: 18px;
-
+    padding-right: 15px;
 }
 
 /* Buttons filtre */
@@ -176,39 +170,125 @@ h4{
 }
 
 /* Hebergement à marseille */
-div.hebergement_marseile{
+
+section.hebergement_marseille{
     display: flex;
-    background-color: #0065FC;
-    z-index: 10;
-    /* background à rajouter en gris et shadow */
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 50%;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
 
 }
-div.card_marseille{
+
+.container_card_marseille{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.card_marseille1{
     flex-direction: column;
     align-items: center;
-    width: 15%;
-    border: 2px solid #0065FC;
+    width: 30%;
+    height: 230px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
     border-radius: 20px;
+    box-shadow: 2px 1px 10px grey;
+    padding: 5px;
+    margin-bottom: 15px;
 }
+
 .img_marseille1{
-    max-height: auto;
-    max-width: 90%;
-    border: 5px solid #FFFFFF;
+    object-fit : cover;
+    height: 45%;
     border-radius: 20px 20px 0px 0px;
     
 }
-div.container_marseille1{
+.container_marseille1{
+    margin-left: 5%;
 
 }
 h5{
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    margin-top: 7px;
+    margin-bottom: -5px;
 }
 p.info_container_marseille1{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+
 }
 
+i.fa-star{
+/* a faire */
+}
+
+h1.afficher_plus{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+    /* display entre les 2 blocs hebergement et populaire */
+.test-cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Populaire */
+
+aside.populaire_cards{
+    width: 33%;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    /* background à rajouter en gris et shadow */
+
+}
+
+.container_title_populaire{
+    display: flex;
+    width: 55%;
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+h1.title_cards{
+    margin-left: 6%;
+}
+i.fa-chart-line{
+    width: 10%;
+}
+
+.container_card_populaire{
+    margin-left: 3%;
+    width: 100%;
+}
+
+.card_populaire{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 1px 10px grey;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.img_populaire{
+    object-fit : cover;
+    max-width: 180px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}

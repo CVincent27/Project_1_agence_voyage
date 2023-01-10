@@ -6,29 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    
     <script src="https://kit.fontawesome.com/f048d9e6c4.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <section class="top-page">
-        <header class="header">
-            <img src="../assets/Booki.png" alt="logo du site">
-            <nav class="nav">
-                <li> 
-                    <a href="">
-                        Hébergements
-                    </a></li>
-                <li> 
-                    <a href="">
-                        Activités
-                    </a></li>               
-            </nav>
-        </header>
-    </section>
 
-    <section class="landing-page">
+<body>
+        <header>
+            <img src="../assets/Booki.png" alt="logo du site">
+        
+            <ul>
+                <li><a href="">Hébergements</a>
+                </li>
+                <li><a href="">Activités</a></li>               
+            </ul>
+        </header>
+
+
+    <main class="landing-page"> 
         <h1>Trouvez votre hébergement pour vos vacances de rêves</h1>
         <h2>En plein centre-ville ou en pleine nature</h2>
 
@@ -38,19 +32,17 @@
             <input class="text_rechercher" type="text" name="rechercher" placeholder="Marseille, France">
             <input class="submit" type="submit" value="Rechercher">
         </form>
-        <br>
+
 
         <!-- Filtre -->
         <section class="filtre">
-        <h3>Filtres</h3>
-        <ol>
-            <div class="button_filtre">     <!-- Utile ?  -->
-                <button class="button_eco" style="font-weight:bold"><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
-                <button class="button_family" style="font-weight:bold"><i class="fa-solid fa-child"></i> Familial</button>
-                <button class="button_heart" style="font-weight:bold"><i class="fa-solid fa-heart"></i> Romantique</button>
-                <button class="button_dog" style="font-weight:bold"><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
-            </div>
-        </ol>
+            <h3>Filtres</h3>
+                <div class="button_filtre">   
+                    <button class="button_eco" style="font-weight:bold"><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
+                    <button class="button_family" style="font-weight:bold"><i class="fa-solid fa-child"></i> Familial</button>
+                    <button class="button_heart" style="font-weight:bold"><i class="fa-solid fa-heart"></i> Romantique</button>
+                    <button class="button_dog" style="font-weight:bold"><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+                </div>
         </section>
         
         <section class="info">
@@ -59,25 +51,127 @@
         </section>
 
         <!-- Hebergement à Marseille -->
-        <div class="hebergement_marseille">
-            <h1>Hébergements à Marseille</h1>
-                <div class="card_marseille">
-                    <img class="img_marseille1" src="../assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement Marseille" style="width:100%">
-                    <div class="container_marseille1">
-                        <h5>Auberge La Canebière</h5>
-                        <p class="info_container_marseille1">Nuit à partir de 25€</p>
-                    </div>
-                </div>
-                <div class="card_marseille">
-                    <img class="img_marseille1" src="../assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement Marseille" style="width:100%">
-                    <div class="container_marseille1">
-                        <h5>Test 2</h5>
-                        <p class="info_container_marseille1">Nuit à partir de 25€</p>
-                    </div>
-                </div>
-            
-            </div>
+    <div class="test-cards">
 
-    </section>
+        <section class="hebergement_marseille">
+            <h1 class="title_marseille">Hébergements à Marseille</h1>
+                <div class="container_card_marseille">
+
+                    <article class="card_marseille1"> 
+                        <img class="img_marseille1" src="../assets/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                        <div class="container_marseille1">
+                            <h5>Auberge La Canebière</h5>
+                            <p class="info_container_marseille1">Nuit à partir de 25€</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+                
+
+                    <article class="card_marseille1">
+                        <img class="img_marseille1" src="../assets/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                        <div class="container_marseille1">
+                            <h5>Hôtel du Port</h5>
+                            <p class="info_container_marseille1">Nuit à partir de 52€</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article class="card_marseille1">
+                        <img class="img_marseille1" src="../assets/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                        <div class="container_marseille1">
+                            <h5>Hôtel Les mouettes</h5>
+                            <p class="info_container_marseille1">Nuit à partir de 76€</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article class="card_marseille1"> 
+                        <img class="img_marseille1" src="../assets/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                        <div class="container_marseille1">
+                            <h5>Hôtel de la mer</h5>
+                            <p class="info_container_marseille1">Nuit à partir de 46€</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article class="card_marseille1"> 
+                        <img class="img_marseille1" src="../assets/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                        <div class="container_marseille1">
+                            <h5>Auberge Le Panier</h5>
+                            <p class="info_container_marseille1">Nuit à partir de 23€</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article class="card_marseille1"> 
+                        <img class="img_marseille1" src="../assets/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                        <div class="container_marseille1">
+                            <h5>Hôtel chez Amina</h5>
+                            <p class="info_container_marseille1">Nuit à partir de 96€</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <h1 class="afficher_plus">Afficher plus</h1>
+                    
+                </div>
+  
+        </section> 
+
+        <!-- Populaire à Marseille -->
+
+        <aside class="populaire_cards">
+            <!-- Titre -->
+            <div class="container_title_populaire">
+                <h1 class="title_cards">Les plus populaires</h1>
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <!-- Cards -->
+                    <div class="container_card_populaire">
+                        <div class="card_populaire">
+                            <img class="img_populaire" src="../assets/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                                <div class="container_marseille1">
+                                <h5>Hotel le Soleil du matin</h5>
+                                <p class="info_container_marseille1">Nuit à partir de 25€</p>
+                                </div>
+                        </div>
+                        <div class="card_populaire">
+                            <img class="img_populaire" src="../assets/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                                <div class="container_marseille1">
+                                <h5>Hotel le Soleil du matin</h5>
+                                <p class="info_container_marseille1">Nuit à partir de 25€</p>
+                                </div>
+                        </div>
+                        <div class="card_populaire">
+                            <img class="img_populaire" src="../assets/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement Marseille" style="width:100%">
+                                <div class="container_marseille1">
+                                <h5>Hotel le Soleil du matin</h5>
+                                <p class="info_container_marseille1">Nuit à partir de 25€</p>
+                                </div>
+                        </div>
+                    </div>
+
+    
+        </aside>
+            
+    </main>
 </body>
 </html>
